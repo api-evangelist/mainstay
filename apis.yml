@@ -1,7 +1,29 @@
 aid: mainstay
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mainstay.png
 name: Mainstay
-description: Mainstay is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Mainstay (formerly AdmitHub) is a student engagement platform for higher
+  education that delivers human-centered, AI-enhanced conversational coaching to students
+  via SMS text messaging, live chat, web chat, and social messaging. Grounded in behavioral
+  science research, its two-way messaging assistant nudges students through enrollment,
+  registration, financial aid, and academic milestones while giving institutional
+  staff insights and tools to improve engagement, persistence, and outcomes. Mainstay
+  is a Techstars portfolio company. It publishes an API-token authenticated REST API
+  (v1.0, base URL https://api.admithub.com) documented at docs.api.mainstay.com, used
+  to sync student and employee records and engagement data between Mainstay and external
+  systems; tokens are generated from the Mainstay dashboard and presented as Bearer
+  credentials.
 url: https://raw.githubusercontent.com/api-evangelist/mainstay/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +33,34 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-apis: []
+- Education
+- EdTech
+- Higher Education
+- Conversational AI
+- Student Engagement
+- Chatbot
+- Messaging
+apis:
+- name: Mainstay API
+  description: AdmitHub/Mainstay REST API v1.0 for syncing student and employee records
+    and engagement data between Mainstay and external systems, with Bearer API-token
+    authentication.
+  humanURL: https://docs.api.mainstay.com/
+  baseURL: https://api.admithub.com
+  tags:
+  - Messaging
+  - Student Engagement
+  - Conversational AI
+  properties:
+  - type: Documentation
+    url: https://docs.api.mainstay.com/
+  - type: APIReference
+    url: https://docs.api.mainstay.com/
+  - type: Authentication
+    url: authentication/mainstay-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -22,4 +68,39 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://admithub.com/
+  url: https://www.mainstay.com/
+- type: DeveloperPortal
+  url: https://docs.api.mainstay.com/
+- type: Documentation
+  url: https://docs.api.mainstay.com/
+- type: APIReference
+  url: https://docs.api.mainstay.com/
+- type: Support
+  url: https://support.mainstay.com/
+- type: Blog
+  url: https://mainstay.com/blog/
+- type: GitHubOrganization
+  url: https://github.com/AdmitHub
+- type: Login
+  url: https://app.mainstay.com/login/
+- type: TermsOfService
+  url: https://mainstay.com/termsofuse/
+- type: PrivacyPolicy
+  url: https://mainstay.com/privacy/
+- type: Compliance
+  url: https://mainstay.com/security/
+- type: Authentication
+  url: authentication/mainstay-authentication.yml
+- type: Conventions
+  url: conventions/mainstay-conventions.yml
+- type: DomainSecurity
+  url: security/mainstay-domain-security.yml
+- type: TrustCenter
+  url: security/mainstay-trust-center.yml
+- type: LLMsTxt
+  url: llms/mainstay-llms.txt
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 6
+  pass: local-v1
