@@ -1,0 +1,27 @@
+# Mainstay
+
+> Mainstay (formerly AdmitHub) is a student engagement platform for higher education that delivers human-centered, AI-enhanced conversational coaching to students via SMS, live chat, web chat, and social messaging. It exposes an API-token authenticated REST API (v1.0) for syncing student/employee records and engagement data between Mainstay and external systems.
+
+## API
+
+- [Mainstay API Documentation](https://docs.api.mainstay.com/): Developer documentation for the AdmitHub/Mainstay REST API v1.0 (base URL https://api.admithub.com). Bearer API-token auth generated from the dashboard.
+- [API Integrations overview](https://mainstay.com/integrations/ah-api/): How the API syncs student/employee data, records, and engagement information with external tools.
+
+## Authentication
+
+- Bearer API token generated in the Mainstay dashboard under Settings -> API Authentication -> Generate a new token, sent as `Authorization: Bearer <token>`.
+
+## Docs
+
+- [Support / Help Center](https://support.mainstay.com/)
+- [Blog](https://mainstay.com/blog/)
+- [Security & Compliance](https://mainstay.com/security/): SOC 2, ISO 27001/27017/27018, GDPR.
+- [Terms of Use](https://mainstay.com/termsofuse/)
+- [Privacy Policy](https://mainstay.com/privacy/)
+
+## Company
+
+- [Website](https://www.mainstay.com/)
+- [About](https://mainstay.com/about/)
+- [Login](https://app.mainstay.com/login/)
+- [GitHub (AdmitHub)](https://github.com/AdmitHub)

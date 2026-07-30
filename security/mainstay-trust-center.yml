@@ -1,0 +1,17 @@
+generated: '2026-07-20'
+method: searched
+probe: true
+source: https://mainstay.com/security/
+url: https://mainstay.com/security/
+certifications:
+- SOC 2
+- ISO 27001
+- ISO 27017
+- ISO 27018
+- GDPR
+evidence:
+- source: https://mainstay.com/security/
+  keywords:
+  - soc 2
+  - iso/iec 27001
+  - gdpr

@@ -1,0 +1,31 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.api.mainstay.com/
+docs: https://docs.api.mainstay.com/
+api:
+  base_url: https://api.admithub.com
+  version: v1.0
+authentication:
+  style: bearer-token
+  header: Authorization
+  scheme: Bearer
+  provisioning: dashboard-generated API token
+  ref: authentication/mainstay-authentication.yml
+versioning:
+  scheme: uri-path
+  current: v1.0
+  note: API is documented as AdmitHub API v1.0; raw endpoints are addressable under the v1.0 surface.
+pagination:
+  style: unknown
+  note: Not documented on the public marketing/integration pages; the full reference is behind the docs portal.
+idempotency:
+  supported: unknown
+  note: No idempotency-key contract is documented on the public surface.
+error_envelope:
+  style: unknown
+notes: >-
+  Cross-cutting conventions captured from Mainstay's public integration docs and
+  third-party connector documentation. The full endpoint/response reference lives
+  in the docs portal at https://docs.api.mainstay.com/ (JS-rendered ReadMe-style
+  site). Only fields with public evidence are asserted; the rest are marked
+  unknown rather than guessed.
